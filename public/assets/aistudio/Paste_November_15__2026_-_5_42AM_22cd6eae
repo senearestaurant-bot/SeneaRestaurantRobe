@@ -1,0 +1,1112 @@
+# MASTER WEBSITE DEVELOPMENT PROMPT
+# SENEA MUSLIM RESTAURANT – COMPLETE DIGITAL MENU WEBSITE
+
+Act as a senior UI/UX designer and experienced React frontend developer. Build a complete, modern, premium, responsive digital menu website for **Senea Muslim Restaurant**, located in Bale Robe, Ethiopia.
+
+The website must be professional, visually attractive, easy to navigate, mobile-friendly, and ready for deployment on Vercel.
+
+Build the actual working website, not just a visual mockup.
+
+---
+
+# 1. PROJECT OVERVIEW
+
+**Restaurant Name:** Senea Muslim Restaurant
+
+**Location:** 42C3+VXC, Robe, Bale Robe, Ethiopia.
+
+**Phone Numbers:**
+- 0921979800
+- 0927780761
+
+**Website Purpose:**
+
+Create a digital restaurant menu where customers can:
+- Explore restaurant food categories.
+- Browse all available menu items.
+- View food photographs.
+- Read food descriptions.
+- See prices in Ethiopian Birr (ETB).
+- Search for food and drinks.
+- Contact restaurant staff.
+- Call the restaurant.
+- Open the restaurant location on Google Maps.
+- Copy the restaurant's payment information.
+- Watch a short restaurant presentation video.
+
+**IMPORTANT: THIS IS A DIGITAL MENU WEBSITE ONLY.**
+
+Do not create:
+- Online ordering.
+- Shopping cart.
+- Checkout.
+- Delivery management.
+- Customer accounts or login.
+- Backend or database.
+- Payment gateway.
+- Order management system.
+- Admin dashboard.
+
+All functionality must work on the frontend without a backend.
+
+# 2. TECHNOLOGY STACK
+
+Use:
+- React.js
+- Vite
+- JavaScript
+- Tailwind CSS
+- Lucide React icons
+- React Hooks
+- CSS animations
+- Responsive design
+
+Requirements:
+- Clean and reusable components.
+- Maintainable code.
+- Separate menu data from UI components.
+- Use semantic HTML.
+- Optimize images and video.
+- Ensure compatibility with modern browsers.
+- No unnecessary dependencies.
+- Prepare the project for Vercel deployment.
+
+# 3. OFFICIAL BRAND COLOR PALETTE
+
+Use this exact color palette throughout the entire website.
+
+| Color | Hex Code | Application |
+|---|---|---|
+| Deep Burgundy | #6D0808 | Primary buttons, headings, navigation |
+| Dark Burgundy | #2D0000 | Hero overlays, footer, dark sections |
+| Olive Green | #757D6F | Secondary accents |
+| Cream | #EEEAD7 | Main backgrounds and content sections |
+| Gold | #C9A227 | Prices, borders, icons, highlights |
+| White | #FFFFFF | Cards, text, backgrounds |
+
+CSS variables:
+
+```css
+:root {
+  --color-burgundy: #6D0808;
+  --color-dark-burgundy: #2D0000;
+  --color-olive: #757D6F;
+  --color-cream: #EEEAD7;
+  --color-gold: #C9A227;
+  --color-white: #FFFFFF;
+}
+```
+
+Design rules:
+- Use cream as the main page background.
+- Use deep burgundy for primary buttons and important headings.
+- Use dark burgundy for the footer and dark sections.
+- Use gold for prices and premium details.
+- Use olive green for secondary design elements.
+- Use white for card surfaces and contrast.
+
+Do not introduce unrelated colors.
+
+# 4. OFFICIAL RESTAURANT LOGO
+
+Use this exact official restaurant logo:
+
+https://6af8443dc6870dc3d38e4623.imgix.net/Senea%20Muslim%20Restaurant%20Logo%20Collection.png
+
+Create a reusable constant:
+
+```js
+export const RESTAURANT_LOGO =
+  "https://6af8443dc6870dc3d38e4623.imgix.net/Senea%20Muslim%20Restaurant%20Logo%20Collection.png";
+```
+
+Logo placement:
+- Navbar.
+- Hero section.
+- Footer.
+- Mobile navigation.
+
+Logo requirements:
+- Preserve the original logo artwork.
+- Do not redesign, redraw, recolor, or distort it.
+- Maintain its original aspect ratio.
+- Use object-fit: contain.
+- Ensure it is clear on desktop and mobile.
+- Use a suitable background so the logo remains visible.
+- Add meaningful alt text: "Senea Muslim Restaurant Official Logo".
+- Add a text fallback if the image fails.
+- If possible, create a favicon using an appropriate crop of the official logo.
+
+Never replace the official logo with an unrelated generated logo.
+
+# 5. WEBSITE NAVIGATION
+
+Create a premium sticky navigation bar.
+
+Include:
+- Official restaurant logo.
+- Senea Muslim Restaurant name.
+- Home.
+- Categories.
+- Menu.
+- About Us.
+- Restaurant Video.
+- Location.
+- Contact.
+- Explore Menu button.
+
+Design:
+- Burgundy navigation accents.
+- Cream or white background.
+- Gold hover effects.
+- Smooth scrolling.
+- Subtle shadow.
+- Responsive mobile hamburger menu.
+
+On mobile, collapse the navigation links into a hamburger menu.
+
+# 6. HERO SECTION
+
+Create a visually impressive homepage hero section.
+
+Main heading:
+
+**Welcome to Senea Muslim Restaurant**
+
+Subtitle:
+
+**Experience the Taste of Tradition**
+
+Description:
+
+"Discover delicious traditional Ethiopian and Arabian-inspired meals, freshly prepared with care and served with warm hospitality."
+
+Buttons:
+1. Explore Our Menu
+2. Find Our Location
+
+Visual design:
+- High-quality photograph of Mendi, roasted chicken, or traditional food.
+- Dark burgundy transparent overlay.
+- White typography.
+- Gold accent details.
+- Premium restaurant atmosphere.
+- Smooth entrance animations.
+
+Add three restaurant highlights:
+
+1. Traditional Food
+2. Fresh Ingredients
+3. Warm Hospitality
+
+# 7. FOOD CATEGORY CARDS
+
+Section title:
+
+**Explore Our Food Categories**
+
+Subtitle:
+
+"Discover something delicious for every taste and every moment."
+
+Create eight attractive glassmorphism category cards.
+
+Categories:
+
+1. 🍳 Breakfast
+2. 🍔 Burger & Sandwich
+3. 🍗 Main Course
+4. 🍕 Pizza
+5. 🍝 Pasta
+6. 🥗 Salad
+7. 🥤 Drinks
+8. 🍰 Desserts
+
+Card design:
+- Attractive food photograph.
+- Category icon or emoji.
+- Category name.
+- "Explore Category" label.
+- Transparent glass effect.
+- Backdrop blur.
+- Subtle white border.
+- Gold accents.
+- Rounded corners.
+- Soft shadows.
+- Image zoom on hover.
+- Smooth hover animation.
+
+Responsive layout:
+- Desktop: 4 columns.
+- Tablet: 2 columns.
+- Mobile: 2 columns.
+
+Category functionality:
+- Clicking a category scrolls to the menu section.
+- Automatically activates the matching menu filter.
+- Breakfast links to Breakfast.
+- Main Course links to Mendi & Tibs, Fish & Chicken, and Sides & Extras.
+- Drinks links to Cold Drinks, Juices & Shakes, and Hot Drinks & Teas.
+
+For categories without supplied menu items, display a professional **Coming Soon** label.
+
+Do not invent products or prices for:
+- Burger & Sandwich.
+- Pizza.
+- Pasta.
+- Salad.
+- Desserts.
+
+# 8. COMPLETE RESTAURANT MENU
+
+Create a beautiful digital menu section with all 59 supplied items.
+
+Section title:
+
+**Our Delicious Menu**
+
+Subtitle:
+
+"Explore our carefully selected traditional meals, refreshing drinks, and favorite treats."
+
+Every menu card must display:
+- Food or drink image.
+- Item name.
+- Description.
+- Price in ETB.
+- Attractive card design.
+- Responsive layout.
+
+Menu filters:
+
+1. All Menu
+2. Mendi & Tibs
+3. Fish & Chicken
+4. Sides & Extras
+5. Breakfast
+6. Cold Drinks
+7. Juices & Shakes
+8. Hot Drinks & Teas
+9. Snacks
+
+Add a functional search input that filters items by name and description.
+
+Display prices clearly in Ethiopian Birr (ETB).
+
+Use the exact menu data below. Do not remove, rename, change, or invent any supplied prices.
+
+## A. MENDI & TIBS – 11 ITEMS
+
+**1. VIP Special Mendi**
+- Description: Premium extra-large traditional spiced Mendi rice and meat.
+- Price: 2900 ETB.
+- Image: No image supplied. Use a professional placeholder.
+
+**2. Ful Special Mendi (Hanid)**
+- Description: Large, highly satisfying portion of special Mendi.
+- Price: 3200 ETB.
+- Image: No image supplied. Use a professional placeholder.
+
+**3. Full Normal Mendi**
+- Description: Standard full portion of flavorful Mendi rice and meat.
+- Price: 3000 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Mandi-Chicken1.jpg
+
+**4. 1/2 Normal Mendi**
+- Description: Standard half portion of normal Mendi.
+- Price: 1600 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Mandi-Chicken1.jpg
+
+**5. Normal Tibs**
+- Description: Sautéed meat cubes cooked with classic seasonings.
+- Price: 400 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/derek%20tibs.jpg
+
+**6. Dereq Tibs**
+- Description: Dry-style pan-fried meat tibs cooked down with rich spices.
+- Price: 450 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/derek%20tibs.jpg
+
+**7. Deqaq Tibs**
+- Description: Finely chopped meat sautéed with onions and peppers.
+- Price: 400 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Cooked-Ethiopian-beef-served-on-injera-being-eaten-by-hand.webp
+
+**8. Rice Tibs**
+- Description: Savory meat tibs served alongside seasoned rice.
+- Price: 600 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/fish-rice-recipe.jpg
+
+**9. Shekla Tibs**
+- Description: Sizzling meat tibs served hot in a traditional clay pot.
+- Price: 650 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Shekala%20Tibs.jpg
+
+**10. Qiqil**
+- Description: Tender slow-cooked meat dish in flavorful broth.
+- Price: 500 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Qiqil.jpg
+
+**11. Kitfo**
+- Description: Minced lean beef warmed in spiced clarified butter and mitmita.
+- Price: 700 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Safi%20fish.jpg
+
+## B. FISH & CHICKEN – 7 ITEMS
+
+**12. Safi Fish**
+- Description: Fresh fish cooked in signature Safi style.
+- Price: 500 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Safi%20fish.jpg
+
+**13. Rice Fish**
+- Description: Flavorful fish served with a side of rice.
+- Price: 800 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Safi%20fish.jpg
+
+**14. Rice Safi**
+- Description: Smaller side portion or variation of rice with fish flavor.
+- Price: 250 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Rice%20safi.jpg
+
+**15. Full Chicken**
+- Description: Whole roasted or prepared chicken.
+- Price: 1500 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Full%20Chicken.jpg
+
+**16. Safi Chicken**
+- Description: Chicken cooked in special Safi style.
+- Price: 1300 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Safi%20Chicken.webp
+
+**17. 1/2 Chicken**
+- Description: Half portion of chicken.
+- Price: 900 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Full%20Chicken.jpg
+
+**18. 1/4 Chicken**
+- Description: Quarter portion of chicken.
+- Price: 600 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Full%20Chicken.jpg
+
+## C. SIDES & EXTRAS – 2 ITEMS
+
+**19. Melewa**
+- Description: Traditional flatbread and accompaniment.
+- Price: 80 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Melewa.jpg
+
+**20. Enjera**
+- Description: Traditional fermented sourdough flatbread.
+- Price: 30 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Enjeras.jpg
+
+## D. BREAKFAST – 6 ITEMS
+
+**21. Special Fetira**
+- Description: Rich layered pastry pancake with premium toppings or fillings.
+- Price: 250 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Special%20Fetiras.jpg
+
+**22. Normal Fetira**
+- Description: Classic shredded pastry pancake, lightly sweetened or savory.
+- Price: 180 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Melewa.jpg
+
+**23. Melewa**
+- Description: Plain traditional breakfast bread.
+- Price: 60 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/fetira-is-a-typical-breakfast.jpg
+
+**24. Kebeda / Melewa**
+- Description: Hearty traditional breakfast bread combination.
+- Price: 350 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/fetira-is-a-typical-breakfast.jpg
+
+**25. Egg Firfir**
+- Description: Shredded bread soaked in spiced scrambled tomato-egg sauce.
+- Price: 200 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Enkulal%20Firfir.jpeg
+
+**26. Dulet**
+- Description: Finely chopped tripe, liver, and lean beef cooked in spiced butter.
+- Price: 300 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Dulets.jpg
+
+## E. COLD DRINKS – 4 ITEMS
+
+**27. Water 2L**
+- Description: Large two-liter bottled water.
+- Price: 50 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Water.jpg
+
+**28. Water 1L**
+- Description: One-liter bottled water.
+- Price: 30 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Water.jpg
+
+**29. Water 1/2L**
+- Description: Half-liter bottled water.
+- Price: 25 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Water.jpg
+
+**30. Cold Drinks**
+- Description: Assorted chilled sodas or bottled beverages.
+- Price: 50 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Cold%20drinks.png
+
+## F. JUICES & SHAKES – 13 ITEMS
+
+**31. Special Juice**
+- Description: Rich blend of multiple layered fresh fruit juices.
+- Price: 180 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Special%20juice.jpg
+
+**32. Sprice Juice**
+- Description: Popular mixed fruit juice layered together.
+- Price: 150 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Sprice%20juice.jpg
+
+**33. Mango Shake**
+- Description: Thick, creamy blended mango shake.
+- Price: 180 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Mango%20shakes.jpg
+
+**34. Papaya Shake**
+- Description: Smooth, refreshing blended papaya shake.
+- Price: 150 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Papaya%20shakes.jpg
+
+**35. Avocado Shake**
+- Description: Rich, velvety blended avocado drink.
+- Price: 150 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Avocado%20shake_2.jpg
+
+**36. Mango Juice**
+- Description: Fresh pure squeezed mango juice.
+- Price: 150 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Mango%20shakes.jpg
+
+**37. Normal Juice**
+- Description: Standard refreshing single-fruit juice.
+- Price: 130 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Avocado%20shake_2.jpg
+
+**38. Strawberry Juice**
+- Description: Sweet and tangy fresh strawberry juice.
+- Price: 200 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Strawberry%20juice.jpg
+
+**39. Temer Juice**
+- Description: Traditional sweet tamarind juice.
+- Price: 230 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Telba%20juice.jpg
+
+**40. Telba Juice**
+- Description: Nutritious flaxseed blended juice.
+- Price: 180 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Telba%20juice.jpg
+
+**41. Telba Temer Juice**
+- Description: Rich blend of flaxseed and tamarind juice.
+- Price: 230 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Telba%20juice.jpg
+
+**42. Fruit Panch**
+- Description: Mixed fruit punch medley.
+- Price: 150 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Fruit%20panche.webp
+
+**43. Habhab / Watermelon Juice**
+- Description: Hydrating fresh watermelon juice.
+- Price: 130 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Strawberry%20juice.jpg
+
+## G. HOT DRINKS & TEAS – 14 ITEMS
+
+**44. Macchiato**
+- Description: Espresso stained with a dash of foamed milk.
+- Price: 50 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Macchiato.jpg
+
+**45. Milk**
+- Description: Warm, comforting glass of milk.
+- Price: 50 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Milks.jpg
+
+**46. Tea**
+- Description: Traditional hot black tea.
+- Price: 30 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Teas.jpg
+
+**47. Tea Milk**
+- Description: Hot tea mixed with creamy milk.
+- Price: 40 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Tea%20milk.jpg
+
+**48. Keshir**
+- Description: Traditional spiced herbal tea infusion.
+- Price: 25 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Keshir.jpg
+
+**49. Keshir Milk**
+- Description: Keshir infused with warm milk.
+- Price: 40 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Keshir.jpg
+
+**50. Special Tea**
+- Description: House-special spiced hot tea.
+- Price: 50 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Teas.jpg
+
+**51. Lemen Tea**
+- Description: Hot tea infused with fresh lemon.
+- Price: 40 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Orange-tea.jpg
+
+**52. Orange Tea**
+- Description: Hot tea flavored with orange notes.
+- Price: 50 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Orange-tea.jpg
+
+**53. Green Tea**
+- Description: Soothing green tea.
+- Price: 40 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Sprice%20teas.jpg
+
+**54. Sprice Tea**
+- Description: Spiced mixed tea blend.
+- Price: 60 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Sprice%20teas.jpg
+
+**55. Lewez Tea**
+- Description: Special traditional flavored herbal tea.
+- Price: 60 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/peanut%20tea.jpg
+
+**56. Hot Chocolate**
+- Description: Rich, warm hot chocolate.
+- Price: 80 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Iced%20Mocha.jpg
+
+**57. Iced Mocha**
+- Description: Chilled espresso blended with chocolate and milk.
+- Price: 100 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Iced%20Mocha.jpg
+
+## H. SNACKS – 2 ITEMS
+
+**58. Chips**
+- Description: Crispy golden French fries.
+- Price: 50 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/Chips.jpg
+
+**59. Sambusa**
+- Description: Crispy pastry pocket stuffed with lentils or meat.
+- Price: 50 ETB.
+- Image: https://6af8443dc6870dc3d38e4623.imgix.net/sandbox/Sambusas.jpg
+
+**MENU DATA REQUIREMENT:**
+
+There are exactly 59 menu entries. Some names repeat in different categories with different prices. Keep them as separate entries.
+
+Store all menu items in:
+
+`src/data/menuData.js`
+
+Use reusable data fields such as:
+
+```js
+{
+  id: 1,
+  name: "VIP Special Mendi",
+  category: "Mendi & Tibs",
+  description: "Premium extra-large traditional spiced Mendi rice and meat.",
+  price: 2900,
+  currency: "ETB",
+  image: null
+}
+```
+
+Use the supplied image URL for each corresponding entry. Where no image is supplied, show a designed placeholder rather than inventing an image URL.
+
+Image requirements:
+- object-fit: cover.
+- Lazy loading.
+- Rounded corners.
+- Consistent image dimensions.
+- Attractive fallback if an image fails.
+- Alt text based on the menu item name.
+
+# 9. RESTAURANT SHORT VIEW VIDEO
+
+Add a premium video showcase section to the homepage.
+
+**Official video URL:**
+
+https://6af8443dc6870dc3d38e4623.imgix.net/1115.mp4
+
+Section heading:
+
+**Take a Look Inside Senea Muslim Restaurant**
+
+Subtitle:
+
+"Experience our restaurant atmosphere, delicious food, and warm hospitality."
+
+Video implementation:
+
+```jsx
+<video
+  controls
+  playsInline
+  preload="metadata"
+  className="restaurant-video"
+>
+  <source
+    src="https://6af8443dc6870dc3d38e4623.imgix.net/1115.mp4"
+    type="video/mp4"
+  />
+  Your browser does not support HTML5 video.
+</video>
+```
+
+Video design requirements:
+- Use the exact video URL.
+- Display the video in a modern, premium player.
+- Maintain a 16:9 aspect ratio.
+- Responsive on desktop, tablet, and mobile.
+- Use a dark burgundy background with gold accents.
+- Include standard playback controls.
+- Support play, pause, volume, and fullscreen.
+- Use playsInline for mobile compatibility.
+- Do not autoplay with sound.
+- Do not force the visitor to download the video.
+- Use a poster image if one is available.
+- If no poster is available, show an elegant video placeholder.
+- Lazy-load video resources where possible.
+- Make sure the video does not overflow on mobile.
+
+# 10. CALL WAITER BUTTON WITH BEEP SOUND
+
+Create a floating **Call Waiter** button fixed at the bottom-right of the screen.
+
+Button design:
+- Burgundy background.
+- Gold bell icon.
+- White text.
+- Rounded shape.
+- Subtle shadow.
+- Smooth hover animation.
+- Fixed position on desktop and mobile.
+- Must not cover important content or mobile navigation.
+
+**IMPORTANT FUNCTIONALITY: PLAY A BEEP SOUND WHEN CLICKED.**
+
+When a visitor clicks Call Waiter:
+
+1. Play a short, clear, professional beep sound.
+2. Play the sound once per click.
+3. Use a pleasant notification tone, not a loud alarm.
+4. Trigger the sound directly from the click so it works with browser audio restrictions.
+5. Add a small visual click animation.
+6. Open the assistance modal.
+
+The beep must:
+- Work on desktop and mobile browsers where audio is supported.
+- Not play automatically when the page loads.
+- Not loop continuously.
+- Not play repeatedly from a single click.
+- Have a reasonable volume.
+- Include a mute/unmute option if appropriate.
+
+If no external sound file is supplied, generate the short beep using the Web Audio API.
+
+Example implementation:
+
+```js
+function playWaiterBeep() {
+  const AudioContextClass =
+    window.AudioContext || window.webkitAudioContext;
+
+  if (!AudioContextClass) return;
+
+  const audioContext = new AudioContextClass();
+
+  const oscillator = audioContext.createOscillator();
+  const gain = audioContext.createGain();
+
+  oscillator.type = "sine";
+  oscillator.frequency.value = 880;
+
+  gain.gain.setValueAtTime(0.15, audioContext.currentTime);
+  gain.gain.exponentialRampToValueAtTime(
+    0.001,
+    audioContext.currentTime + 0.25
+  );
+
+  oscillator.connect(gain);
+  gain.connect(audioContext.destination);
+
+  oscillator.start();
+  oscillator.stop(audioContext.currentTime + 0.25);
+}
+```
+
+Use this function when the user clicks the Call Waiter button. Handle browser audio restrictions and cleanup appropriately.
+
+**Assistance Modal**
+
+Heading:
+
+**Need Assistance?**
+
+Description:
+
+"Our staff is ready to help you. Contact our restaurant team directly."
+
+Buttons:
+
+- Call Restaurant: 0921979800
+- Call Restaurant: 0927780761
+- Close
+
+Telephone links:
+
+```html
+<a href="tel:0921979800">Call Restaurant</a>
+<a href="tel:0927780761">Call Restaurant</a>
+```
+
+Important:
+- The beep is only played on the visitor's device.
+- Do not claim that the restaurant staff or waiter has received a notification.
+- Do not create a fake waiter notification system.
+- This feature is for opening the contact options and calling restaurant staff.
+
+# 11. PAYMENT INFORMATION SECTION
+
+Create a section titled:
+
+**PAYMENT INFORMATION**
+
+Subtitle:
+
+"Pay conveniently using our official payment details."
+
+Display these editable placeholders:
+
+- Bank Name: [ADD BANK NAME]
+- Account Name: [ADD ACCOUNT NAME]
+- Account Number: [ADD ACCOUNT NUMBER]
+- Mobile Payment Number: [ADD PAYMENT NUMBER]
+
+Every payment field must have its own Copy button.
+
+Functionality:
+- Clicking Copy copies only the corresponding payment value.
+- Show a temporary "Copied successfully!" message.
+- Use the Clipboard API with a fallback for supported browsers.
+- Add an attractive gold copy icon/button.
+- Make the section responsive.
+
+Design:
+- Dark burgundy section background.
+- Cream payment information card.
+- Gold accents.
+- Clear typography.
+
+Add this notice:
+
+"Please verify the payment information before making a payment."
+
+Do not invent actual bank details or account numbers. Keep the placeholders editable until the restaurant supplies the correct information.
+
+# 12. ABOUT US SECTION
+
+Section heading:
+
+**About Senea Muslim Restaurant**
+
+Use this description:
+
+"Welcome to Senea Muslim Restaurant, where traditional flavors meet warm hospitality. Located in Bale Robe, we are dedicated to serving delicious meals, refreshing drinks, and traditional favorites in a welcoming environment. Whether you visit us for breakfast, lunch, or dinner, we look forward to serving you."
+
+Design:
+- Cream background.
+- Burgundy heading.
+- Gold decorative elements.
+- Attractive restaurant or food photography.
+- Clean, premium layout.
+
+Do not invent restaurant history, awards, certifications, or opening hours.
+
+# 13. RESTAURANT LOCATION
+
+Section heading:
+
+**Find Us**
+
+Restaurant address:
+
+42C3+VXC, Robe, Bale Robe, Ethiopia.
+
+Google Maps URL:
+
+https://www.google.com/maps/search/?api=1&query=42C3%2BVXC%2C%20Robe%2C%20Ethiopia
+
+Include:
+- Embedded Google Maps if possible.
+- Get Directions button.
+- Copy Address button.
+- Location icon.
+- Restaurant address.
+
+Get Directions must open the Google Maps URL.
+
+Copy Address must copy:
+
+`42C3+VXC, Robe, Bale Robe, Ethiopia.`
+
+# 14. CONTACT SECTION
+
+Section heading:
+
+**Contact Senea Muslim Restaurant**
+
+Display:
+
+Phone 1: 0921979800
+
+Phone 2: 0927780761
+
+Telephone links:
+
+```text
+tel:0921979800
+tel:0927780761
+```
+
+WhatsApp links:
+
+```text
+https://wa.me/251921979800
+https://wa.me/251927780761
+```
+
+Include:
+- Call buttons.
+- WhatsApp buttons.
+- Phone icons.
+- Friendly contact layout.
+
+All links must work correctly on mobile devices.
+
+# 15. FOOTER
+
+Create a premium footer using Dark Burgundy (#2D0000).
+
+Include:
+- Official restaurant logo.
+- Restaurant name.
+- Short restaurant description.
+- Quick navigation links.
+- Menu category links.
+- Contact phone numbers.
+- Restaurant location.
+- Gold decorative accents.
+- Social/contact links where supplied.
+
+Copyright:
+
+**© 2026 Senea Muslim Restaurant. All Rights Reserved.**
+
+# 16. USER EXPERIENCE AND ANIMATIONS
+
+Add professional UI interactions:
+
+- Smooth scrolling.
+- Fade-in on scroll.
+- Menu card hover effects.
+- Image zoom effects.
+- Category card animations.
+- Button hover effects.
+- Modal entrance and exit animations.
+- Sticky navigation.
+- Responsive hamburger navigation.
+- Smooth category filtering.
+- Search functionality.
+- Copy confirmation messages.
+- Video player responsiveness.
+- Call Waiter beep effect.
+
+Keep animations smooth and lightweight. Do not sacrifice performance.
+
+# 17. RESPONSIVE DESIGN
+
+The website must work correctly on:
+
+- Desktop computers.
+- Laptops.
+- Tablets.
+- Android phones.
+- iPhones.
+
+Mobile requirements:
+- Two-column category grid.
+- Responsive menu cards.
+- Readable prices.
+- Touch-friendly buttons.
+- Hamburger navigation.
+- Properly sized video.
+- Floating Call Waiter button.
+- No horizontal scrolling.
+- No overlapping elements.
+- Readable typography on small screens.
+
+# 18. SEO AND PERFORMANCE
+
+Set the website title to:
+
+`Senea Muslim Restaurant | Bale Robe Ethiopia`
+
+Meta description:
+
+`Explore the digital menu of Senea Muslim Restaurant in Bale Robe, Ethiopia. Discover traditional Mendi, Tibs, Chicken, Juices, Breakfast, and more.`
+
+Include:
+- Open Graph metadata.
+- Favicon based on the official logo.
+- Semantic HTML.
+- Image alt text.
+- Lazy-loaded images.
+- Optimized video loading.
+- Accessible buttons and navigation.
+- Good page loading performance.
+
+# 19. PROJECT STRUCTURE
+
+Organize the project professionally:
+
+```text
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── CategoryCards.jsx
+│   ├── MenuSection.jsx
+│   ├── MenuCard.jsx
+│   ├── CategoryFilter.jsx
+│   ├── MenuSearch.jsx
+│   ├── RestaurantVideo.jsx
+│   ├── AboutSection.jsx
+│   ├── PaymentSection.jsx
+│   ├── LocationSection.jsx
+│   ├── ContactSection.jsx
+│   ├── CallWaiter.jsx
+│   └── Footer.jsx
+│
+├── data/
+│   ├── menuData.js
+│   └── categoryData.js
+│
+├── assets/
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+You may adjust the structure when necessary, but maintain reusable components and keep the menu data separate.
+
+# 20. FINAL QUALITY ASSURANCE
+
+Before considering the project complete, verify the following:
+
+**Menu**
+- All 59 supplied menu entries are present.
+- All prices match the supplied information.
+- Repeated item names in different categories remain separate.
+- All nine menu filters work.
+- Search works.
+- All supplied images load or display a fallback.
+- Prices are displayed in ETB.
+
+**Branding**
+- Official logo URL is used.
+- Correct six-color palette is used.
+- Logo proportions are preserved.
+- Website looks consistent across all sections.
+
+**Video**
+- Exact restaurant video URL is used.
+- Video plays.
+- Controls work.
+- Video is responsive.
+- No automatic playback with sound.
+
+**Call Waiter**
+- Button stays visible.
+- Beep plays once when clicked.
+- Sound does not autoplay.
+- Assistance modal opens.
+- Both telephone links work.
+- Modal closes correctly.
+- No false claim that a waiter was notified.
+
+**Payment**
+- All four payment placeholders are visible.
+- Each Copy button copies the correct value.
+- Copy confirmation appears.
+
+**Location and Contact**
+- Google Maps opens correctly.
+- Get Directions works.
+- Copy Address works.
+- Both phone links work.
+- Both WhatsApp links work.
+
+**Responsive design**
+- Desktop layout works.
+- Tablet layout works.
+- Mobile layout works.
+- No horizontal overflow.
+- No overlapping buttons or sections.
+
+**Build**
+Run:
+
+```bash
+npm install
+npm run build
+```
+
+Resolve all errors and warnings that affect the website's functionality.
+
+Make sure the project is ready for Vercel deployment.
+
+# 21. FINAL DEVELOPMENT INSTRUCTIONS
+
+Build a complete, polished, premium digital restaurant website for Senea Muslim Restaurant.
+
+Prioritize:
+1. Professional restaurant branding.
+2. Beautiful food photography.
+3. Accurate menu information and prices.
+4. Smooth customer navigation.
+5. Working Call Waiter button with beep sound.
+6. Restaurant short-view video.
+7. Working contact and WhatsApp links.
+8. Functional payment information copy buttons.
+9. Correct restaurant location.
+10. Excellent mobile experience.
+
+Do not create a generic restaurant template. Make the website visually distinctive and consistent with the official Senea Muslim Restaurant brand.
+
+Do not omit any section or menu item.
+
+Do not replace supplied images or video URLs with unrelated content.
+
+Do not invent restaurant details, payment information, products, prices, or business features.
+
+**The final result must be a complete, working, responsive digital menu website that is ready to deploy.**

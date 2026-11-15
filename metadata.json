@@ -1,0 +1,8 @@
+{
+  "name": "Senea Muslim Restaurant",
+  "description": "Digital menu website for Senea Muslim Restaurant in Bale Robe, Ethiopia. Explore traditional Mendi, Tibs, Fish & Chicken, Breakfast, Fresh Juices, and Hot Drinks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
